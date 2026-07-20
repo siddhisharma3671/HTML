@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tutorial</title>
+</head>
+<body>
+    <form  action="/page.html">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname">
+        <br>
+        <br>
+        <label for ="lname"> Last Name:</label>
+        <input type="text" id="lname">
+        <input type="file">
+        <br>    
+        <p> Choose Your Favourite Language:</p>
+        <input type="radio" name="fav" id="html">
+        <label for="html"> HTML</label><br>
+        <input type ="radio" name="fav" id="css">
+        <label for="css"> CSS </label><br>
+        <input type ="radio" name="fav" id="js">
+         <label for="js">JS</label><br>
+
+         <p> Choose Favourite Anime(multiple): </p>
+         <input type ="checkbox">
+         <label> Demon Slayer</label>
+         <input type="checkbox">
+         <label> Attack of Titans</label>
+         <input type="checkbox">
+         <label>One Punch Man</label>
+         <br>
+         <br>
+         <label> Select a Car: </label>
+         <select>
+            <option> Volvo</option>
+            <option>Bugati</option>
+            <option>Auto</option>
+            <option>Alto</option>
+         </select>
+
+         <br>
+         <br>
+         <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
