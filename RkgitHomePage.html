@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKGIT - Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #e6f2ff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            color: #003366;
+            font-size: 30px;
+        }
+
+        .hero p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        /* Courses */
+        .courses {
+            padding: 40px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .course {
+            background-color: white;
+            padding: 25px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .course h3 {
+            color: #003366;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .course-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .course {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Raj Kumar Goel Institute of Technology</h1>
+        <p>RKGIT, Ghaziabad</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="admission.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to RKGIT</h2>
+        <p>Empowering Students Through Quality Technical Education</p>
+        <a href="about.html" class="btn">Know More</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About RKGIT</h2>
+        <p>
+            Raj Kumar Goel Institute of Technology is a technical institute
+            located in Ghaziabad. The institute provides quality education
+            and opportunities for students to develop technical and
+            professional skills.
+        </p>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <h2>Our Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course">
+                <h3>Computer Science</h3>
+                <p>B.Tech in Computer Science and Engineering</p>
+            </div>
+
+            <div class="course">
+                <h3>Information Technology</h3>
+                <p>B.Tech in Information Technology</p>
+            </div>
+
+            <div class="course">
+                <h3>Electronics</h3>
+                <p>B.Tech in Electronics and Communication</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 RKGIT. All Rights Reserved.</p>
+        <p>Ghaziabad, Uttar Pradesh</p>
+    </footer>
+
+</body>
+</html>
