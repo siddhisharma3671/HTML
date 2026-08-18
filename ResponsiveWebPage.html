@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .box {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Responsive Website</h1>
+        <p>Welcome to my webpage</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+            <h2>HTML</h2>
+            <p>HTML is used to create the structure of a web page.</p>
+        </div>
+
+        <div class="box">
+            <h2>CSS</h2>
+            <p>CSS is used to style and design a web page.</p>
+        </div>
+
+        <div class="box">
+            <h2>JavaScript</h2>
+            <p>JavaScript is used to add functionality to a web page.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+</html>
