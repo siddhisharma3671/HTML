@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #74ebd5;
+        }
+
+        .container {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .container h2 {
+            font-size: 36px;
+            color: #2c3e50;
+        }
+
+        .container p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #1abc9c;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .container h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Your journey to knowledge and innovation starts here!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="container" id="home">
+        <h2>Hello and Welcome!</h2>
+
+        <p>
+            We are delighted to welcome you to our website.
+            Our goal is to provide useful information, quality resources,
+            and a friendly experience for every visitor.
+        </p>
+
+        <p>
+            Explore our website to learn more about our services,
+            discover new opportunities, and stay connected with us.
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+    </section>
+
+    <section class="features" id="about">
+        <div class="card">
+            <h3>About Us</h3>
+            <p>We aim to share knowledge, ideas, and information to help people learn and grow.</p>
+        </div>
+
+        <div class="card" id="services">
+            <h3>Our Services</h3>
+            <p>We provide helpful resources, learning materials, and solutions for our visitors.</p>
+        </div>
+
+        <div class="card" id="contact">
+            <h3>Contact Us</h3>
+            <p>Have a question or suggestion? We would love to hear from you.</p>
+            <p>Email: info@example.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+        <p>Designed using HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
