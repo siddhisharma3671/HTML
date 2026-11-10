@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f4f4ff;
+            color: #252547;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        nav h2 {
+            color: #7055df;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #7055df;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h1 span {
+            color: #7055df;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7055df;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #4931ae;
+            transform: translateY(-3px);
+        }
+
+        .profile {
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(135deg, #7055df, #c5a9ff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 90px;
+            box-shadow: 0 10px 30px #c5b5f5;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 60px 8%;
+            text-align: center;
+            background: white;
+        }
+
+        .skills h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .skill-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .skill-card {
+            background: #f4f1ff;
+            padding: 30px;
+            width: 200px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px #ddd;
+        }
+
+        .skill-card h3 {
+            color: #7055df;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #252547;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MyPortfolio.</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Siddhi!</span></h1>
+
+            <h2>Web Developer & Student</h2>
+
+            <p>
+                Welcome to my personal portfolio!
+                I love learning new technologies,
+                creating websites and turning
+                creative ideas into reality.
+            </p>
+
+            <a href="#skills" class="btn">Explore My Skills</a>
+        </div>
+
+        <div class="profile">
+            S
+        </div>
+
+    </section>
+
+    <section class="skills" id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skill-container">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Building website structures.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Designing beautiful layouts.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Making websites interactive.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 My Portfolio | Designed with HTML & CSS</p>
+        <p>Keep Learning. Keep Creating.</p>
+    </footer>
+
+</body>
+</html>
