@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning and Floating</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        /* 1. Static Position */
+        .static-box {
+            position: static;
+            background-color: lightblue;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* 2. Relative Position */
+        .relative-box {
+            position: relative;
+            left: 30px;
+            top: 10px;
+            background-color: lightgreen;
+            padding: 15px;
+            width: 250px;
+            margin-bottom: 30px;
+        }
+
+        /* 3. Absolute Position */
+        .parent {
+            position: relative;
+            height: 150px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background-color: orange;
+            padding: 15px;
+        }
+
+        /* 4. Fixed Position */
+        .fixed-box {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            background-color: pink;
+            padding: 15px;
+        }
+
+        /* 5. Sticky Position */
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: yellow;
+            padding: 15px;
+        }
+
+        /* 6. Float Left */
+        .float-left {
+            float: left;
+            width: 150px;
+            height: 100px;
+            background-color: skyblue;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* 7. Float Right */
+        .float-right {
+            float: right;
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* 8. Clear */
+        .clear-box {
+            clear: both;
+            background-color: lightyellow;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Positioning</h1>
+
+    <h2>1. Static Position</h2>
+    <div class="static-box">
+        I am Static. (Default Position)
+    </div>
+
+    <h2>2. Relative Position</h2>
+    <div class="relative-box">
+        I am Relative. Moved 30px right and 10px down.
+    </div>
+
+    <h2>3. Absolute Position</h2>
+    <div class="parent">
+        Parent Box (Relative)
+        <div class="absolute-box">
+            Absolute Box
+        </div>
+    </div>
+
+    <h2>4. Fixed Position</h2>
+    <div class="fixed-box">
+        Fixed Box (Scroll the page)
+    </div>
+
+    <h2>5. Sticky Position</h2>
+    <div class="sticky-box">
+        I am Sticky! Scroll the page.
+    </div>
+
+    <p>
+        Scroll down to observe how the sticky heading behaves.
+        This paragraph is for adding content to the page.
+    </p>
+
+    <p>
+        CSS positioning allows us to control where elements appear
+        on a webpage. Relative, absolute, fixed and sticky positions
+        behave differently.
+    </p>
+
+    <h1>CSS Floating</h1>
+
+    <div class="float-left">
+        Float Left Box
+    </div>
+
+    <div class="float-right">
+        Float Right Box
+    </div>
+
+    <p>
+        This is a paragraph. Notice how this text flows around the
+        floated boxes. The left box is floated to the left and the
+        right box is floated to the right. CSS float is commonly
+        used to arrange content beside images or other elements.
+    </p>
+
+    <div class="clear-box">
+        I am using clear: both. I will appear below both floated boxes.
+    </div>
+
+    <h2>End of Example</h2>
+
+    <p>
+        Keep scrolling to see the fixed box stay in the same place.
+    </p>
+
+    <p style="height: 500px;">
+        Extra space for scrolling...
+    </p>
+
+</body>
+</html>
